@@ -46,11 +46,6 @@ public class SharePreferencesManager {
 	
 	/** 登录信息SharePreferences文件模式 */
 	private final int loginSpMode = Context.MODE_PRIVATE;
-	
-	
-	private SharePreferencesManager() {
-		throw new UnsupportedOperationException("can't instantiate class SharePreferencesManager");
-	}
 	 
 	/**
 	 * <p>

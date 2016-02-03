@@ -34,7 +34,11 @@ public class ByteUtils {
 		}
 		StringBuilder sb = new StringBuilder(2 * data.length);
 		for(byte b : data) {
-			sb.append(Integer.toHexString(0x00ff & b));
+			int n = 0x00ff & b;
+			if(n < 10) {
+				sb.append("0");
+			}
+			sb.append(Integer.toHexString(n));
 		}
 		return sb.toString();
 	}
